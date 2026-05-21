@@ -1,20 +1,20 @@
-class ArithmeticModel {
+class ArthimeticModel {
   // Properties
-  final int first;
-  final int second;
+  final double first;
+  final double second;
 
-  ArithmeticModel({required this.first, required this.second});
+  ArthimeticModel({required this.first, required this.second});
 
   // Behaviors
-  int add() {
+  double add() {
     return first + second;
   }
 
-  int sub() {
+  double sub() {
     return first - second;
   }
 
-  int mul() {
+  double mul() {
     return first * second;
   }
 

@@ -29,10 +29,14 @@ class _DashboardScreenState extends State<DashboardScreen> {
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
         items: const [
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Arthic'),
-          BottomNavigationBarItem(icon: Icon(Icons.shopping_bag), label: 'SI'),
-          BottomNavigationBarItem(icon: Icon(Icons.person), label: 'palin'),
-          BottomNavigationBarItem(icon: Icon(Icons.person), label: 'arms'),
+          BottomNavigationBarItem(icon: Icon(Icons.numbers), label: 'arms'),
+          BottomNavigationBarItem(icon: Icon(Icons.calculate), label: 'Arthic'),
+
+          BottomNavigationBarItem(
+            icon: Icon(Icons.compare_arrows),
+            label: 'palin',
+          ),
+          BottomNavigationBarItem(icon: Icon(Icons.attach_money), label: 'SI'),
         ],
         backgroundColor: Colors.amber,
         selectedItemColor: Colors.white,
