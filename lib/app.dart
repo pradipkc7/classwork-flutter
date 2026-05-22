@@ -1,4 +1,5 @@
 import 'package:classwork4/screens/dashboard_screen.dart';
+import 'package:classwork4/theme/my_theme.dart';
 import 'package:flutter/material.dart';
 
 class MyApp extends StatelessWidget {
@@ -8,10 +9,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
+      title: 'Font and Theme',
+      theme: getApplicationTheme(),
+
       home: const DashboardScreen(),
     );
   }

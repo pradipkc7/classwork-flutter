@@ -24,7 +24,13 @@ class _DashboardScreenState extends State<DashboardScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Dashboard'), centerTitle: true),
+      appBar: AppBar(
+        title: const Text(
+          'Dashboard',
+          style: TextStyle(fontFamily: 'Montserrat Extra Bold', fontSize: 20),
+        ),
+        centerTitle: true,
+      ),
       body: lstBottomScreen[_selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
@@ -38,9 +44,9 @@ class _DashboardScreenState extends State<DashboardScreen> {
           ),
           BottomNavigationBarItem(icon: Icon(Icons.attach_money), label: 'SI'),
         ],
-        backgroundColor: Colors.amber,
-        selectedItemColor: Colors.white,
-        unselectedItemColor: Colors.blue,
+        backgroundColor: const Color.fromARGB(255, 150, 153, 155),
+        selectedItemColor: Colors.blue,
+        unselectedItemColor: Colors.white,
         currentIndex: _selectedIndex,
         onTap: (index) {
           setState(() {

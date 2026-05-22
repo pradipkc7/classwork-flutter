@@ -18,7 +18,6 @@ class _PalindromeScreenState extends State<PalindromeScreen> {
     final model = palindromeModel;
 
     return Scaffold(
-      backgroundColor: const Color.fromRGBO(213, 205, 179, 1),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Form(

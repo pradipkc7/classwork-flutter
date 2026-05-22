@@ -18,8 +18,6 @@ class _ArthimeticScreenState extends State<ArthimeticScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromRGBO(213, 205, 179, 1),
-
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Column(
@@ -30,7 +28,7 @@ class _ArthimeticScreenState extends State<ArthimeticScreen> {
                 first = double.tryParse(value) ?? 0;
               },
               decoration: const InputDecoration(
-                labelText: "Enter first no",
+                labelText: "Enter first number",
                 border: OutlineInputBorder(),
               ),
             ),
@@ -43,7 +41,7 @@ class _ArthimeticScreenState extends State<ArthimeticScreen> {
                 second = double.tryParse(value) ?? 0;
               },
               decoration: const InputDecoration(
-                labelText: "Enter second no",
+                labelText: "Enter second number",
                 border: OutlineInputBorder(),
               ),
             ),
@@ -78,7 +76,7 @@ class _ArthimeticScreenState extends State<ArthimeticScreen> {
                     result = arthimeticModel!.sub();
                   });
                 },
-                child: const Text("Sub"),
+                child: const Text('sub', style: TextStyle(color: Colors.amber)),
               ),
             ),
 

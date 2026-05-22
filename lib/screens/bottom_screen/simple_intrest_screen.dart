@@ -17,8 +17,6 @@ class _SimpleIntrestScreenState extends State<SimpleIntrestScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 138, 127, 94),
-
       body: Padding(
         padding: const EdgeInsets.all(8),
         child: Column(
